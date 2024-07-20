@@ -3,15 +3,19 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	base: '/docs/',
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			title: 'Barmic Development',
+			favicon: './src/assets/barmic-white.png',
 			logo: {
 				light: './src/assets/barmic-black.png',
 				dark: './src/assets/barmic-white.png',
 			},
 			social: {
 				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/cawtoz/BarmicDocs',
 			},
 			customCss: [
 				'./src/styles/custom.css',
