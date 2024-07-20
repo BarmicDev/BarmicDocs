@@ -6,7 +6,6 @@ export default defineConfig({
 	base: '/docs/',
 	integrations: [
 		starlight({
-			title: 'My Docs',
 			title: 'Barmic Development',
 			favicon: './src/assets/barmic-white.png',
 			logo: {
@@ -14,7 +13,6 @@ export default defineConfig({
 				dark: './src/assets/barmic-white.png',
 			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
 				github: 'https://github.com/cawtoz/BarmicDocs',
 			},
 			customCss: [
@@ -22,15 +20,27 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'General',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Introduction', slug: 'introduction' },
+						{ label: 'Instalation', slug: 'instalation' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Sirius',
+					badge: 'BoxPvP',
+					items: [
+						{ label: 'Introduction', slug: 'sirius/index' },
+						{ label: 'Commands', slug: 'sirius/commands' },
+					],
+				},
+				{
+					label: 'Zenith',
+					badge: 'Sync',
+					items: [
+						{ label: 'Introduction', slug: 'zenith/index' },
+						{ label: 'Commands', slug: 'zenith/commands' },
+					],
 				},
 			],
 		}),
