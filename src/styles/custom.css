@@ -1,0 +1,24 @@
+:root {
+    --sl-color-gray-6: #0a0a0a;
+    --sl-color-black: #0a0a0a;
+    --sl-color-accent-high: #ffffff;
+}
+
+:root[data-theme='light'] {
+    --sl-color-gray-6: #ffffff;
+    --sl-color-black: #ffffff;
+    --sl-color-gray-7: #ffffff;
+    --sl-color-accent: #0a0a0a;
+}
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    color: rgb(107, 134, 255);
+}
+
+.card {
+    border-radius: 10px;
+}

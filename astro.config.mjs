@@ -6,9 +6,16 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			logo: {
+				light: './src/assets/barmic-black.png',
+				dark: './src/assets/barmic-white.png',
+			},
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
+			customCss: [
+				'./src/styles/custom.css',
+			],
 			sidebar: [
 				{
 					label: 'Guides',
